@@ -1,0 +1,23 @@
+{
+  "name": "pit-wall-bot",
+  "version": "0.1.0",
+  "description": "Bot de Discord de Fórmula 1: resultados en vivo, predicciones, coleccionables y ligas privadas.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.7",
+    "better-sqlite3": "^11.3.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
